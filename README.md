@@ -8,7 +8,7 @@ SourceGround is an open-source Retrieval-Augmented Generation (RAG) application 
 
 Add your Streamlit URL here after deployment:
 
-`https://your-app-name.streamlit.app`
+`[https://your-app-name.streamlit.app](https://sourceground-rag.streamlit.app/)`
 
 ## Features
 

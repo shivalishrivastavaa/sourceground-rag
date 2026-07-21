@@ -72,6 +72,8 @@ APP_CSS = """
 <style>
     :root {
         color-scheme: light dark;
+        --primary-color: #17A9DC !important;
+        --primary-color-rgb: 23, 169, 220 !important;
     }
 
     .stApp {

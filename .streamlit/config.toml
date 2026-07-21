@@ -5,7 +5,3 @@ enableXsrfProtection = true
 
 [browser]
 gatherUsageStats = false
-
-[theme]
-primaryColor = "#17A9DC"
-font = "sans serif"

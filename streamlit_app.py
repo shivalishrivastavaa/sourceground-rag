@@ -1219,6 +1219,49 @@ with st.sidebar:
     st.subheader("Document ingestion")
     st.caption("Upload digital or scanned PDFs. A new process run completely replaces the active index.")
 
+    st.divider()
+
+    with st.expander("About & how to use", expanded=False):
+        st.markdown(
+             """
+**About SourceGround**
+
+SourceGround is an open-source document intelligence system that produces
+evidence-backed answers from digital and scanned PDFs.
+
+**How to use**
+
+1. Upload one or more PDF documents.
+2. Select **Process and index documents**.
+3. Adjust routing or retrieval settings if needed.
+4. Ask a question in the research console.
+5. Review the cited pages and supporting evidence.
+
+**Technology**
+
+- BGE semantic embeddings
+- FAISS vector retrieval
+- Qwen 2.5 open-source language model
+- Tesseract OCR for scanned pages
+
+**Understanding confidence**
+
+Confidence represents the average semantic similarity of the retrieved
+chunks. It measures retrieval relevance—not the probability that an answer
+is correct.
+"""
+        )
+        st.link_button(
+            "View source code",
+             "https://github.com/shivalishrivastavaa/sourceground-rag",
+            use_container_width=True,use_container_width=True,
+        )
+        st.caption(
+            "Uploaded PDFs are processed for the active session. "
+            "Temporary PDF files are deleted after text extraction."
+        )
+
+
     uploaded_files = st.file_uploader(
         "Upload PDF documents",
         type=["pdf"],

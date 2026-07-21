@@ -1,4 +1,1 @@
-build-essential
-cmake
-libopenblas-dev
 tesseract-ocr

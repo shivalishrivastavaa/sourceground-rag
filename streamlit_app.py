@@ -279,6 +279,31 @@ APP_CSS = """
         font-weight: 700;
     }
 
+    .stButton > button[kind="primary"],
+    button[data-testid="stBaseButton-primary"] {
+        background: linear-gradient(135deg, #17A9DC, #1678EF) !important;
+        border: 1px solid rgba(35, 198, 232, 0.45) !important;
+        color: white !important;
+        box-shadow: 0 8px 22px rgba(22, 120, 239, 0.22);
+        transition: transform 160ms ease, box-shadow 160ms ease,
+            border-color 160ms ease, background 160ms ease;
+    }
+
+
+    .stButton > button[kind="primary"]:hover,
+    button[data-testid="stBaseButton-primary"]:hover {
+        background: linear-gradient(135deg, #23C6E8, #2488FF) !important;
+        border-color: #23C6E8 !important;
+        box-shadow: 0 10px 26px rgba(22, 120, 239, 0.30);
+        transform: translateY(-1px);
+    }
+
+    .stButton > button[kind="primary"]:active,
+    button[data-testid="stBaseButton-primary"]:active {
+        transform: translateY(0);
+        box-shadow: 0 5px 14px rgba(22, 120, 239, 0.22);
+    }
+
     .sg-footnote {
         margin-top: .6rem;
         color: color-mix(in srgb, var(--text-color) 57%, transparent);

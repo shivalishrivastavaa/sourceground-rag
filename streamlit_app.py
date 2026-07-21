@@ -1254,7 +1254,7 @@ is correct.
         st.link_button(
             "View source code",
              "https://github.com/shivalishrivastavaa/sourceground-rag",
-            use_container_width=True,use_container_width=True,
+            use_container_width=True,
         )
         st.caption(
             "Uploaded PDFs are processed for the active session. "
